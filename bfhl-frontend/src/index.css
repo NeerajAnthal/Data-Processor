@@ -1,0 +1,23 @@
+/* Ensure the HTML and body take up the full viewport */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e; /* Dark background */
+  color: white; /* Light text */
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure the root container fills the viewport */
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
