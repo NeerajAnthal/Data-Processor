@@ -12,7 +12,7 @@ const InputForm = ({ setResponse }) => {
                 throw new Error("Invalid JSON format");
             }
 
-            const response = await axios.post("http://localhost:3000/bfhl", parsedData);
+            const response = await axios.post("https://data-process-backend-1.onrender.com/bfhl", parsedData);
             setResponse(response.data);
         } catch (error) {
             alert("Invalid JSON or Server Error");
